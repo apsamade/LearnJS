@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+nav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 100;
+    padding-top: 50px;
+
+    opacity: 0;
+    transform: translateY(-150px);
+    animation: apparition 0.5s 1s ease-out forwards;
+}
+nav div{
+    width: 40%;
+    display: flex;
+    margin: auto;
+}
+nav div a{
+    display: block;
+    margin: auto;
+    padding: 0 5%;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.5s;
+    color: white;
+}
+nav div a:hover{
+transition: 0.5s;
+
+color: blue;
+}
+#lv1{
+    background-image: url(img/hacker.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+}
+#lv1 div{
+    margin: auto;
+    position: relative;
+    top: 200px;
+    padding: 2.5%;
+    width: 35%;
+    border: 2px solid;
+    border-radius: 25px;
+    background-color: grey;
+
+    opacity: 0;
+    transform: translateY(-150px);
+    animation: apparition 0.5s 0.7s ease-out forwards;
+}
+#lv1 div h1{
+    padding-top: 2%;
+    text-align: center;
+}
+#lv1 div input{
+    margin: auto;
+    display: block;
+    margin: auto;
+    padding: 2%;
+}
+#lv1 div button{
+    padding: 12px 25px;
+    display: block;
+    margin: 8% auto 15%;
+    border: none;
+    color: white;
+    background-color: black;
+    font-size: 18px;
+    transition: 0.5s;
+
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: apparition 0.5s 0.5s ease-out forwards;
+}
+#lv1 div button:hover{
+    transition: 0.5s;
+    padding: 12px 40px;
+}
+#lv1 div ul{
+    margin: 8%;
+}
+#lv2{
+    background-color: bisque;
+    height: 100vh;
+}
+#lv2 div{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding: 15% 0;
+    font-size: 7em;
+   
+}
+#lv2 div p{
+    display: block;
+    cursor: pointer;
+}
+#lv3{
+    background-image: url(img/hacker2.jpg);
+    background-size: cover;
+    color: white;
+    padding-bottom: 10%;
+}
+#lv3 h2{
+    text-align: center;
+    padding: 12% 0 3%;
+}
+#lv3 em{
+    display: block;
+    color: rgba(0, 0, 0, 0.5);
+    padding-bottom: 5% 0;
+    margin: auto;
+}
+#lv3 #chosePokemon{
+    border: 2px solid white;
+    overflow-y: scroll;
+    display: block;
+    padding: 5%;
+    margin: 3.5% auto;
+    width: 50%;
+    height: 20vh;
+}
+#lv3 #chosePokemon h3{
+    text-align: center;
+    padding: 0% 0 10%;
+    cursor: pointer;
+}
+#lv3 #chosePokemon li{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#lv4{
+    height: 50vh;
+    padding-top: 5%;
+    background-color: rgb(161, 110, 110);
+}
+#lv4 #taListe{
+    margin: auto;
+    width: 50%;
+    background-color: brown;
+    padding: 40px;
+}
+#lv4 #taListe h3{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 4% 0;
+}
+#lv4 #taListe .fl{
+    display: flex;
+    margin: auto;
+}
+#lv4 #taListe .fl input{
+    margin-left: 12%;
+    padding: 15px 20px;
+    border: none;
+}
+#lv4 #taListe .fl button{
+    padding: 15px 20px;
+    margin-left: 0;
+    display: block;
+    border: none;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+}
+#lv4 #mlist{
+    margin: auto;
+    width: 61.2%;
+    position: relative;
+    top: 0;
+    left: 1px;
+    list-style: none;
+}
+#lv4 #mlist li{
+    background-color: grey;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+.croix{
+    display: block;
+    text-align: right;
+    color: black;
+    padding: 15px;
+    font-size: 1.5em;
+    transition: 0.5s;
+    position: relative;
+    top: 0;
+    left: 90%;
+}
+.croix:hover{
+    transition: 0.5s;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+@keyframes apparition{
+    100%{
+        opacity: 1;
+        transform: none;
+    }
+}
